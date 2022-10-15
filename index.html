@@ -13,15 +13,18 @@
     
     <div id="preloader"></div>
 
-
+    <!-- <div class="backdrop" onclick="kaisen()"></div> -->
 
     <div class="hero">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="./images/Vinicius-goal-pc-view.mp4" type="video/mp4">
-        </video>
+        <div id="overlay">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="./images/Vinicius-goal-pc-view.mp4" type="video/mp4">
+            </video>
+        </div>
+        
 
         <nav>
-            <img src="./images/madrid3.png" class="logo">
+            <img src="./images/madrid3.png" class="logo" onclick="kaisen()">
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">TICKETS</a></li>

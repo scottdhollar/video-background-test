@@ -29,9 +29,41 @@ nav{
 }
 
 nav .logo{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    z-index: 6;
+    border: 5px solid rgba(255, 255, 255, 0.589);
+    border-radius: 150px;
+    transition: all 4s ease;
+    /* box-shadow: 2px black; */
 }
+
+nav .logo:hover{
+    backdrop-filter: blur(10px);
+    rotate: 360deg;
+    transform: scale(120%);
+    border: 5px dotted #fff;
+}
+
+/* .backdrop {
+    width :100%;
+    height: 100%;
+    background: var(--light-text-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    transition: all 1s ease;
+    backdrop-filter: blur(5px);
+} */
+
+/* .backdrop:hover {
+    backdrop-filter: blur(0px);
+}
+
+.show-backdrop {
+    display: block;
+} */
 
 nav ul li{
     list-style: none;
@@ -43,6 +75,17 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 17px;
+    font-family: cursive;
+    border: 3px solid transparent;
+    transition: 1s ease;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+nav ul li a:hover{
+    border: 3px solid white;
+    backdrop-filter: blur(3px);
+    box-shadow: 3px 3px 5px 1px black;
 }
 
 .content{
@@ -54,6 +97,7 @@ nav ul li a{
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
+    /* box-shadow: 5px 5px 10px 2px black; */
 }
 
 .content h1:hover{
@@ -65,19 +109,51 @@ nav ul li a{
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    font-size: 24p;
+    font-size: 24px;
     border: 2px solid #fff;
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
+    transition: 2s;
 }
+
+.content a:hover{
+    backdrop-filter: blur(10px);
+    /* box-shadow: 2px 2px 2px 2px black; */
+    /* font-size: 28px; */
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: linear-gradient(rgba(0, 0, 255),rgba(0, 0, 0)); */
+    overflow: hidden;
+    background-color: rgb(8, 25, 48);
+    z-index: -1;
+    /* backdrop-filter: blur(10px); */
+    /* cursor: pointer; */
+}
+
+/* #overlay:hover {
+    backdrop-filter: blur(0);
+} */
 
 .back-video{
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
+    opacity: 0.7;
 }
+
+/* .back-video:hover{
+    
+} */
 
 @media (min-aspect-ratio: 16/9){
     .back-video{
