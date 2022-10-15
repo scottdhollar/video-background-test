@@ -29,20 +29,22 @@ nav{
 }
 
 nav .logo{
+    margin-top: 20px;
     width: 120px;
     height: 120px;
     z-index: 6;
     border: 5px solid rgba(255, 255, 255, 0.589);
-    border-radius: 150px;
+    border-radius:  50px;
     transition: all 4s ease;
     /* box-shadow: 2px black; */
 }
 
 nav .logo:hover{
-    backdrop-filter: blur(10px);
-    rotate: 360deg;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.068);
+    /* rotate: 360deg; */
     transform: scale(120%);
-    border: 5px dotted #fff;
+    border: 5px solid #fff;
 }
 
 /* .backdrop {
@@ -73,19 +75,22 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.613);
     font-size: 17px;
     font-family: cursive;
     border: 3px solid transparent;
     transition: 1s ease;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
 }
 
 nav ul li a:hover{
     border: 3px solid white;
     backdrop-filter: blur(3px);
-    box-shadow: 3px 3px 5px 1px black;
+    /* box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.397); */
+    color: #fff;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.045);
 }
 
 .content{
@@ -109,16 +114,20 @@ nav ul li a:hover{
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    font-size: 24px;
-    border: 2px solid #fff;
+    font-size: 26px;
+    border: 2px solid rgba(255, 255, 255, 0.459);
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-    transition: 2s;
+    transition: all 2s ease;
 }
 
 .content a:hover{
     backdrop-filter: blur(10px);
+    border: 3px solid #fff;
+    text-shadow: 2px 2px 2px 2px #000;
+    background: rgba(255, 255, 255, 0.068);
+    /* color: rgb(96, 5, 5); */
     /* box-shadow: 2px 2px 2px 2px black; */
     /* font-size: 28px; */
 }
@@ -133,7 +142,7 @@ nav ul li a:hover{
     bottom: 0;
     /* background-color: linear-gradient(rgba(0, 0, 255),rgba(0, 0, 0)); */
     overflow: hidden;
-    background-color: rgb(8, 25, 48);
+    background-color: rgba(4, 12, 23, 0.808);
     z-index: -1;
     /* backdrop-filter: blur(10px); */
     /* cursor: pointer; */
@@ -170,10 +179,20 @@ nav ul li a:hover{
 }
 
 #preloader{
-    background: #000 url(./images/circle-loader.gif) no-repeat center;
+    background: rgba(0, 0, 0) url(./images/infinity-loader-styled.gif) no-repeat center;
     background-size: 15%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
+    /* backdrop-filter: blur(6px); */
+}
+
+.info {
+    background-color: rgba(4, 12, 23, 0.808);
+    color: white;
+    font-family: cursive;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
