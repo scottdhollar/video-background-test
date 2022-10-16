@@ -324,7 +324,7 @@ h3{
 }
 
 #preloader{
-    background: rgba(0, 0, 0) url(./images/infinity-loader.gif) no-repeat center;
+    background: rgba(0, 0, 0) url(./images/circle-loader.gif) no-repeat center;
     background-size: 15%;
     height: 100vh;
     width: 100%;
