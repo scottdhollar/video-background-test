@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funkyshit</title>
+    <title>realmadrid by tertiux</title>
     <link rel="icon" href="./images/madrid2.png">
 </head>
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="mobile.css">
+
 <body>
-    
     
     
     <div id="preloader"></div>
 
-    <!-- <div class="backdrop" onclick="kaisen()"></div> -->
+    <div class="backdrop" onclick="kaisen()"></div>
 
     <div class="hero">
         <div id="overlay">
@@ -26,23 +27,39 @@
 
         <nav>
             <img src="./images/madrid3.png" class="logo">
-            <ul>
-                <li><a href="https://www.realmadrid.com/en" target="_blank">HOME</a></li>
-                <li><a href="https://www.realmadrid.com/en/tickets" target="_blank">TICKETS</a></li>
-                <li><a href="https://www.realmadrid.com/en/tour-bernabeu" target="_blank">VR MADRID TOUR</a></li>
-                <li><a href= "https://wa.me/message/SQWCD3JZAO36B1" target="_blank">CONTACT US</a></li>
-            </ul>
+            <div class="desktop-link-holder">
+                <ul>
+                    <li><a href="https://www.realmadrid.com/en" target="_blank">HOME</a></li>
+                    <li><a href="https://www.realmadrid.com/en/tickets" target="_blank">TICKETS</a></li>
+                    <li><a href="https://www.realmadrid.com/en/tour-bernabeu" target="_blank">VR MADRID TOUR</a></li>
+                    <li><a href= "https://wa.me/message/SQWCD3JZAO36B1" target="_blank">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <!-- dropdown-menu -->
+            <div class="hamburger" onclick="kaisen()">
+                <div class="menu"></div>
+            </div>
+            <div class="mobile-link-holder">
+                <ul>
+                    <li><a href="https://www.realmadrid.com/en" target="_blank">HOME</a></li>
+                    <li><a href="https://www.realmadrid.com/en/tickets" target="_blank">TICKETS</a></li>
+                    <li><a href="https://www.realmadrid.com/en/tour-bernabeu" target="_blank">VR MADRID TOUR</a></li>
+                    <li><a href= "https://wa.me/message/SQWCD3JZAO36B1" target="_blank">CONTACT US</a></li>
+                </ul>
+            </div>
+
         </nav>
         <div class="content">
             <h1>Hala Madrid</h1>
             <a href="https://madridistas.com/en-US/madridistas/landing?_gl=1*3qw9i2*_ga*MTE3NDIwMzU3NC4xNjY1ODIzODIx*_ga_8V29EP0QLY*MTY2NTgyMzg0Mi4xLjEuMTY2NTgyNDUyNC4wLjAuMA.." target="_blank">Explore</a>
         </div>
-
+        
+        <!-- <div class="info"> <h3>©</h3> </div> -->
     </div>
 
-    <div class="info">© 2022</div>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 
     <script>
         var loader = document.getElementById("preloader");
@@ -51,6 +68,8 @@
             loader.style.display = "none";
         })
     </script>
+
+
 
 
 </body>
